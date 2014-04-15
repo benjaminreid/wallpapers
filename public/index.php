@@ -12,5 +12,23 @@
   </head>
   <body>
 
+    <h1>wallpapers.</h1>
+
+    <div class="wallpaper">
+      <h2 class="wallpaper__title">Jurassic Park</h2>
+      <div class="wallpaper__preivew wallpaper__preivew--desktop">
+        <p>HD <a class="align--right" href="#">Download</a></p>
+        <img class="wallpaper__image" src="wallpapers/jurassic-park/desktop.jpg" alt="">
+      </div>
+      <div class="wallpaper__preivew wallpaper__preivew--tablet">
+        <p>Tablet <a class="align--right" href="#">Download</a></p>
+        <img class="wallpaper__image" src="wallpapers/jurassic-park/tablet.jpg" alt="">
+      </div>
+      <div class="wallpaper__preivew wallpaper__preivew--mobile">
+        <p>Mobile <a class="align--right" href="#">Download</a></p>
+        <img class="wallpaper__image" src="wallpapers/jurassic-park/mobile.jpg" alt="">
+      </div>
+    </div>
+
   </body>
 </html>
