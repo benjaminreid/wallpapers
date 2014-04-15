@@ -1,3 +1,6 @@
+<?php
+  include 'wallpapers.php';
+?>
 <!doctype html>
 <html class="no-js">
   <head>
@@ -14,6 +17,7 @@
 
     <h1>wallpapers.</h1>
 
+    <?php foreach($wallpapers as $wallpaper) : ?>
     <div class="wallpaper">
       <h2 class="wallpaper__title">Jurassic Park</h2>
       <div class="wallpaper__preivew wallpaper__preivew--desktop">
@@ -29,6 +33,7 @@
         <img class="wallpaper__image" src="wallpapers/jurassic-park/mobile.jpg" alt="">
       </div>
     </div>
+    <?php endforeach; ?>
 
   </body>
 </html>
