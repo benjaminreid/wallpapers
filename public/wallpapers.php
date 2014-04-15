@@ -9,6 +9,12 @@
   foreach($clean_directories as $dir) {
     $files = scandir($directory . '/' . $dir);
     $clean_files = array_diff($files, $dirty_files);
+    $sizes = array();
 
-    $wallpapers[$dir] = $clean_files;
+    foreach ($clean_files as $file) {
+      $file_name = explode('.', $file);
+      $sizes[$file_name[0]] = $file;
+    }
+
+    $wallpapers[$dir] = $sizes;
   }

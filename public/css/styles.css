@@ -28,6 +28,11 @@ h1, h2 {
 
 .wallpaper__title {
   color: #C4C4C4;
+  text-transform: capitalize;
+}
+
+.wallpaper__meta {
+  text-transform: capitalize;
 }
 
 .wallpaper__preivew {

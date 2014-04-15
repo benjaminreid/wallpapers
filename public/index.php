@@ -17,21 +17,15 @@
 
     <h1>wallpapers.</h1>
 
-    <?php foreach($wallpapers as $wallpaper) : ?>
+    <?php foreach($wallpapers as $wallpaper => $files) : ?>
     <div class="wallpaper">
-      <h2 class="wallpaper__title">Jurassic Park</h2>
-      <div class="wallpaper__preivew wallpaper__preivew--desktop">
-        <p>HD <a class="align--right" href="#">Download</a></p>
-        <img class="wallpaper__image" src="wallpapers/jurassic-park/desktop.jpg" alt="">
+      <h2 class="wallpaper__title"><?php echo $wallpaper ?></h2>
+      <?php foreach($files as $type => $file) : ?>
+      <div class="wallpaper__preivew wallpaper__preivew--<?php echo $type ?>">
+        <p class="wallpaper__meta"><?php echo $type ?> <a class="align--right" href="wallpapers/<?php echo $wallpaper ?>/<?php echo $file ?>">Download</a></p>
+        <img class="wallpaper__image" src="wallpapers/<?php echo $wallpaper ?>/<?php echo $file ?>" alt="">
       </div>
-      <div class="wallpaper__preivew wallpaper__preivew--tablet">
-        <p>Tablet <a class="align--right" href="#">Download</a></p>
-        <img class="wallpaper__image" src="wallpapers/jurassic-park/tablet.jpg" alt="">
-      </div>
-      <div class="wallpaper__preivew wallpaper__preivew--mobile">
-        <p>Mobile <a class="align--right" href="#">Download</a></p>
-        <img class="wallpaper__image" src="wallpapers/jurassic-park/mobile.jpg" alt="">
-      </div>
+      <?php endforeach; ?>
     </div>
     <?php endforeach; ?>
 
