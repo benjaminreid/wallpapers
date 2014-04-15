@@ -23,7 +23,9 @@ h1, h2 {
 }
 
 .wallpaper {
+  width: 100%;
   padding: 30px 0 30px 0;
+  overflow: hidden;
 }
 
 .wallpaper__title {
